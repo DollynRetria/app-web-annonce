@@ -1,0 +1,266 @@
+/* CSS Document */
+@font-face {
+    font-family: 'museo_sans_cond500';
+    src: url('fonts/museosanscnd-500-webfont_1-webfont.eot');
+    src: url('fonts/museosanscnd-500-webfont_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosanscnd-500-webfont_1-webfont.woff') format('woff'),
+         url('fonts/museosanscnd-500-webfont_1-webfont.ttf') format('truetype'),
+         url('fonts/museosanscnd-500-webfont_1-webfont.svg#museo_sans_cond500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font:12px Arial, Helvetica, sans-serif;
+	color:#333;
+}
+.breadcrumbs{
+	padding:5px;
+	background:#eee;
+	font:12px Arial, Helvetica, sans-serif;
+	margin:20px 0 0 0
+}
+.breadcrumbs a{
+	font:bold 12px Arial, Helvetica, sans-serif; 
+	color:#000;
+	text-decoration:none;
+}
+/*alert box*/
+.alert-box {
+	color:#555;
+	font:11px Arial, Helvetica, sans-serif;
+	padding:10px 36px;
+	margin:10px 0;
+}
+.alert-box span {
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.errorMsg {
+	background:#ffecec url('../images/error.png') no-repeat 10px 50%;
+	border:1px solid #f5aca6;
+}
+.successMsg {
+	background:#e9ffd9 url('../images/success.png') no-repeat 10px 50%;
+	border:1px solid #a6ca8a;
+}
+.warningMsg {
+	background:#fff8c4 url('../images/warning.png') no-repeat 10px 50%;
+	border:1px solid #f2c779;
+}
+.noticeMsg {
+	background:#e3f7fc url('../images/notice.png') no-repeat 10px 50%;
+	border:1px solid #8ed9f6;
+}
+body{background:#eee}
+#container{
+	width:1000px;
+	margin:auto;
+	background:#ffffff;
+	padding:20px;
+}
+#nav{
+	font:16px Arial, Helvetica, sans-serif;
+	background:#000000;
+	padding:20px;
+}
+#nav a{
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	float:left;
+	margin:0 5px;
+}
+.clear{
+	clear:both;
+}
+.formContent h3{
+	display:block;
+	padding:10px 0;
+	font:16px Arial, Helvetica, sans-serif;
+	border-bottom:dashed 1px #ccc;
+}
+.formContent div.formBox{
+	width:500px;
+	float:left;
+	/*height:30px;*/
+	overflow:hidden;
+	margin-bottom:5px;
+}
+.formContent div.formBox label{
+	font:13px/30px Arial, Helvetica, sans-serif;
+	display:block;
+	float:left;
+	width:200px;
+}
+.formContent div.formBox label.error{
+	color:#ff0000;
+	text-align:right;
+	float:left;
+	width:450px;
+}
+.formContent div.formBox .inputText
+, .formLogin .inputText{
+	height:30px;
+	background:#eee;
+	width:250px;
+	float:left;
+	border:none;
+}
+.formContent div.formBox .inputText.error
+,.formContent div.formBox .select.error{
+	background:#ffc6c6;
+}
+
+.formContent div.formBox .select{
+	height:30px;
+	background:#eee;
+	width:250px;
+	float:left;
+	padding:5px;
+	border:none;
+}
+.formContent div.formBox .select.validdate{
+	width:70px;
+}
+.formContent form{
+	padding:20px 0;
+}
+.customfile-filename{
+	border:none;
+	background:#eee;
+	height:30px;
+	line-height:30px;
+	float:left;
+	width:148px;
+}
+.customfile-upload{
+	border:none;
+	color:#fff;
+	background:#000;
+	height:30px;
+	width:100px;
+	font:12px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+	float:left;
+}
+.btn{
+	font:13px Arial, Helvetica, sans-serif;
+	display:block;
+	float:left;
+	width:150px;
+	border:0;
+	background:#000;
+	height:30px;
+	color:#fff;
+	cursor:pointer;
+}
+a.btn{
+	line-height:30px;
+	text-align:center;
+	text-decoration:none;
+}
+.btn:hover{
+	background:#80b533;
+}
+hr.line{
+	border:none;
+	height:1px;
+	border-bottom:dashed 1px #ccc;
+	margin:15px 0;
+}
+
+/*listing*/
+table.listes{
+	border-collapse:collapse;
+	width:100%;
+	border:solid 1px #cccccc;
+}
+table.listes tr.head td{
+	background:#d7d7d7 url(../images/bg_tableList.png) repeat-x;
+}
+table.listes tr td{
+	padding:5px;
+	background:#f3f3f3;
+	border:solid 1px #cccccc;
+}
+table.listes tr td a{
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#333;
+	text-decoration:none;
+}
+table.listes tr td .link{
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#333;
+	text-decoration:none;
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+table.listes tr td a:hover{
+	color:#000;
+}
+table.listes tr.gris td{
+	background:#e3e3e3;
+}
+table.listes tr td ul li{
+	display:inline-block;
+	*display:inline;
+}
+table.listes tr td ul li img{
+	height:50px;
+	border:solid 5px #ccc;
+}
+.pagination{
+	padding:0;
+	float:left;
+}
+.pagination span{
+	background:#d7d7d7;
+	float:left;
+	margin-right:5px;
+	padding:5px 10px;
+	border:solid 1px #cccccc;
+}
+.pagination a{
+	background:#f3f3f3;
+	float:left;
+	margin-right:5px;
+	padding:5px 10px;
+	border:solid 1px #cccccc;
+	text-decoration:none;
+	color:#333;
+}
+.formLogin{
+	background:#fff;
+	width:360px;
+	padding:10px;
+	margin:15% auto 0 auto;
+}
+.formLogin h3{
+	margin:0 0;
+	font:16px/50px "museo_sans_cond500";
+	display:block;
+	text-transform:uppercase;
+	height:50px;
+	color:#fff;
+	text-align:center;
+	background:#000
+}
+.formLogin table, .formLogin table tr td{
+	padding:5px 0;
+	border:none;
+}
+.formLogin table label{
+	display:block;
+	width:100px;
+	padding:0 5px 0 0;
+	text-align:right;
+}
+.formLogin .inputText{
+	text-indent:5px;
+}
